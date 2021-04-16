@@ -1,5 +1,7 @@
 :root {
-    creamColor: #EAE7D7;
+    --creamColor: #EAE7D7;
+    --coffeeBrown: #542903;
+    --bgOrange: #ecb807;
     googleComfort: "Comfortaa";
     googleSourceSans: "Source Sans Pro";
 }
@@ -18,10 +20,16 @@ body {
     padding: 1.25rem 2.5rem
 }
 
+.values a {
+    color: var(--bgOrange);
+    font-weight: bold;
+    text
+}
+
 .content-section {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
-    background-color: #EAE7D7;
+    background-color: var(--creamColor);
 }
 
 .content-section-heading h2 {
@@ -94,12 +102,17 @@ h6 {
     height: auto;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background: url(../img/coffee_1920.png), linear-gradient(90deg, rgba(231, 142, 0, 0.90) 5%, rgba(234, 231, 215, 1) 85%);
-    /*  background: linear-gradient(90deg, rgba(255, 255, 255, .1 ) 0, rgba(229, 120, 22) 100%), url(../img/coffee_1920.png); */
+    background: url(../img/coffee_1920.png), linear-gradient(90deg, rgba(29, 128, 150, 1) 5%, rgba(234, 231, 215, 1) 85%);
+    /*  background: linear-gradient(90deg, rgba(255, 255, 255, .1 ) 0, rgba(229, 120, 22) 100%), url(../img/coffee_1920.png); 
+    linear-gradient(90deg, rgba(231, 142, 0, 0.90) 5%, rgba(234, 231, 215, 1) 85%);
+    linear-gradient(90deg, rgba(23, 128, 230, 0.90) 5%, rgba(234, 231, 215, 1) 85%);
+    29,128,159,1)
+
+    */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #542903;
+    color: var(--creamColor);
 }
 
 .masthead h1 {
@@ -214,8 +227,13 @@ h6 {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1)
 }
 
+.experience {
+    color: #333333;
+    font-size: .9rem;
+}
+
 .callout {
-    padding: 15rem 0;
+    padding: 6rem 0;
     background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0, rgba(255, 255, 255, .1) 100%), url(../img/books_1920.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -223,10 +241,11 @@ h6 {
 }
 
 .callout h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 700;
     display: block;
-    max-width: 30rem
+    max-width: 30rem;
+    padding-bottom: 2rem;
 }
 
 .portfolio-item {
@@ -343,9 +362,9 @@ a:hover {
 }
 
 .btn-outline {
-    color: #542903;
+    color: var(--creamColor);
     border: 1px solid;
-    border-color: #542903;
+    border-color: var(--creamColor);
 }
 
 .btn-outline:hover,
@@ -355,6 +374,7 @@ a:hover {
     color: white;
     border-color: #fdcc52;
     background-color: #E67D17;
+    5283fd #1780e6
 }
 
 .btn-primary:active,
@@ -365,8 +385,8 @@ a:hover {
 }
 
 .btn-secondary {
-    background-color: #ecb807!important;
-    border-color: #ecb807!important;
+    background-color: var(--bgOrange)!important;
+    border-color: var(--bgOrange)!important;
     color: #fff!important
 }
 
@@ -395,5 +415,5 @@ a:hover {
 }
 
 .text-secondary {
-    color: #ecb807!important
+    color: var(--bgOrange)!important
 }
