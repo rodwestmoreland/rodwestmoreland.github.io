@@ -249,11 +249,27 @@ h6 {
 }
 
 .portfolio-item {
+    background: rgba(0, 0, 0, 0.7);
     display: block;
     position: relative;
     overflow: hidden;
     max-width: 530px;
     margin: auto auto 1rem
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 .portfolio-item .caption {
@@ -269,7 +285,8 @@ h6 {
 
 .portfolio-item .caption .caption-content {
     color: #fff;
-    margin: auto 2rem 2rem
+    text-shadow: 3px 3px 6px #000;
+    margin: auto 2rem 2rem;
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -288,6 +305,7 @@ h6 {
         margin: 0
     }
     .portfolio-item .caption {
+        background: rgba(0, 0, 0, 0.4);
         transition: background-color .7s, -webkit-clip-path .25s ease-out;
         transition: clip-path .25s ease-out, background-color .7s;
         transition: clip-path .25s ease-out, background-color .7s, -webkit-clip-path .25s ease-out;
